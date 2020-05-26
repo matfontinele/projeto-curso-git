@@ -14,7 +14,7 @@ touch <nome-do-arquivo>
 # Adicionar todos os arquivos da pasta escolhida:
 git add .
 
-# Adicionar arquivo específico, ou atualizar no repositório:
+# Adicionar arquivo específico, ou atualizar no index do Git:
 git add <nome-do-arquivo>
 
 # Para desfazer um git add:
@@ -60,6 +60,9 @@ git push -u origin master
 # Clonar projeto do Github para um repositório local:
 git clone <link-do-repositório>
 
+# Atualizar o repositório local com o mais atualizado do Github:
+git pull
+
 # Para adicionar uma branch (ramo separado para fazer alterações):
 # no caso a seguir, o HEAD do origin continua apontando para a master
 git branch <nome-da-branch>
@@ -81,3 +84,29 @@ git push origin <nome-da-branch>
 # Mesclar duas branches, após alterações:
 # Selecionar a branch principal com o checkout e enviar:
 git merge <nome-da-branch-com-as-alterações>
+
+# Mesclar arquivos de duas branches sem gerar um novo evento:
+git rebase <nome-do-arquibo>
+
+# Editar mensagem do último commit, mudar arquivos commitados:
+git commit --amend
+
+# Ver alterações em arquivo antes do commit:
+git diff <nome-do-arquivo>
+
+# Marcar compromissos específicos no Github:
+git tag 'Texto'
+
+# Consultar commits, e suas estatísticas abreviadas, criadas no Github:
+git log -stat
+
+# Deploy é colocar o projeto em produção
+
+# Para ver um repositório remoto:
+git remote
+
+# Para listar todos os repositório remotos, com url:
+git remote -v
+
+# Para adicionar um arquivo e fazer o commit em uma linha:
+git commit -a -m 'Comentário'
