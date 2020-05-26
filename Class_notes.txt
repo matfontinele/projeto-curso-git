@@ -1,0 +1,79 @@
+# Introdução ao Git
+
+# Configuração inicial para permitir usar Git e Github:
+$ git config --global user.name "YOUR NAME"
+$ git config --global user.email "YOUR EMAIL ADDRESS"
+
+# Iniciar controle de versão em determinada pasta
+# Acessar a pasta escolhida pelo pelo cmd e digitar:
+git init
+
+# Criar arquivo pelo cmd:
+touch <nome-do-arquivo>
+
+# Adicionar todos os arquivos da pasta escolhida:
+git add .
+
+# Adicionar arquivo específico, ou atualizar no repositório:
+git add <nome-do-arquivo>
+
+# Para desfazer um git add:
+git restore <nome-do-arquivo>
+
+# Verificar qual branch está e se há arquivos para commitar:
+git status
+
+# Visualizar o log dos commits realizados:
+git log
+
+# Mostra os arquivos presentes na pasta:
+ls
+
+# Confirmar uma modificação, adicionar ou remover arquivos:
+git commit -m 'Msg para descrever mudança realizada'
+
+# Enviar as mudanças commitadas para o repositório remoto (Github):
+git push
+
+--------------------------------------------
+# Introdução ao Github
+
+# Aba Pull Requests:
+# Alterações em repositórios que dependem da aprovação do adm
+
+# Aba Issues:
+# Discutir bugs que determinado repositório tem
+
+# Aba Marketplace:
+# Ferramentas para auxiliar e enriquecer no processo de desenvolvimento
+
+# Aba Explore:
+# Informações sobre o Github e eventos
+
+# Criar novo repositório no Github:
+# Acessar "+" >> "New Repository"
+
+# Para adicionar pasta ao Github, usa-se os comandos:
+git remote add origin <link-do-repositório-criado-no-Github>
+git push -u origin master
+
+# Clonar projeto do Github para um repositório local:
+git clone <link-do-repositório>
+
+# Para adicionar uma branch (ramo separado para fazer alterações):
+# no caso a seguir, o HEAD do origin continua apontando para a master
+git branch <nome-da-branch>
+# já nesse outro, HEAD é trocado para o branch criado
+git checkout -b <nome-da-branch>
+
+# Trocar branch escolhida:
+git checkout <nome-da-branch>
+
+# Listar as branches existentes:
+git branch
+
+# Deletar uma branch:
+git branch -D <nome-da-branch>
+
+# Enviar branch do repositório local para o remoto:
+git push origin <nome-da-branch>
