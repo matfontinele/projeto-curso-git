@@ -77,3 +77,7 @@ git branch -D <nome-da-branch>
 
 # Enviar branch do repositório local para o remoto:
 git push origin <nome-da-branch>
+
+# Mesclar duas branches, após alterações:
+# Selecionar a branch principal com o checkout e enviar:
+git merge <nome-da-branch-com-as-alterações>
